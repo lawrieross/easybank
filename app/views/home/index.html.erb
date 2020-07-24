@@ -1,0 +1,218 @@
+<div class="b-mask"></div>
+
+<nav class="b-nav">
+  <div class="b-nav__container">
+    <div class="b-nav__items">
+      <%= image_tag('logo.svg', alt: 'Easybank logo', class: 'b-nav__img b-nav__img--logo') %>
+      <%= image_tag('icon-hamburger.svg', alt: 'Hamburger icon', class: 'b-nav__img b-nav__img--hamburger', id: 'hamburger-icon') %>
+      <%= image_tag('icon-close.svg', alt: 'Hamburger icon', class: 'b-nav__img b-nav__img--close', id: 'close-icon') %>
+
+      <div class="b-nav__menu">
+        <div class="b-nav__links">
+          <a href="#" class="b-nav__link">Home</a>
+          <a href="#" class="b-nav__link">About</a>
+          <a href="#" class="b-nav__link">Contact</a>
+          <a href="#" class="b-nav__link">Blog</a>
+          <a href="#" class="b-nav__link">Careers</a>
+        </div>
+      </div>
+
+      <a href="#" class="b-cta-button b-cta-button--nav">
+        <span>
+          Request Invite
+        </span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<main class="b-main">
+  <section class="b-hero">
+    <div class="b-hero__image-container">
+      <%= image_tag('bg-intro-mobile.svg', alt: 'Easybank intro background image for mobile', class: 'b-nav__img b-nav__img--intro-mobile') %>
+      <%= image_tag('image-mockups.png', alt: 'Mobile images', class: 'b-nav__img b-nav__img--mobiles') %>
+    </div>
+
+    <div class="b-hero__image-container--desktop">
+      <%= image_tag('bg-intro-desktop.svg', alt: 'Easybank intro background image for desktop', class: 'b-nav__img b-nav__img--intro-desktop') %>
+    </div>
+
+    <div class="b-hero__cta-container">
+      <div class="b-hero__cta">
+        <h1 class="b-hero__cta-title">
+          Next generation digital banking
+        </h1>
+        <p class="b-hero__cta-byline">
+          Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.
+        </p>
+        <a href="#" class="b-cta-button">
+          <span>
+            Request Invite
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="b-information">
+    <div class="b-information__container">
+      <div class="b-information__headline">
+        <h2 class="b-information__title">
+          Why choose Easybank?
+        </h2>
+        <p class="b-information__byline">
+          We leverage Open Banking to turn your bank account into your financial hub. Control your finances like never before.
+        </p>
+      </div>
+
+      <div class="b-information__card-container">
+        <!-- Online banking -->
+        <div class="b-information__card">
+          <%= image_tag('icon-online.svg', alt: 'Online banking icon', class: 'b-information__img') %>
+          <h3 class="b-information__subtitle">
+            Online Banking
+          </h3>
+          <p class="b-information__byline">
+            Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world.
+          </p>
+        </div>
+
+        <!-- Simple Budgeting -->
+        <div class="b-information__card">
+          <%= image_tag('icon-budgeting.svg', alt: 'Budgeting icon', class: 'b-information__img') %>
+          <h3 class="b-information__subtitle">
+            Simple Budgeting
+          </h3>
+          <p class="b-information__byline">
+            See exactly where your money goes each month. Receive notifications when you’re close to hitting your limits.
+          </p>
+        </div>
+
+        <!-- Fast Onboarding -->
+        <div class="b-information__card">
+          <%= image_tag('icon-onboarding.svg', alt: 'Fast onboarding icon', class: 'b-information__img') %>
+          <h3 class="b-information__subtitle">
+            Fast Onboarding
+          </h3>
+          <p class="b-information__byline">
+            We don’t do branches. Open your account in minutes online and start taking control of your finances right away.
+          </p>
+        </div>
+
+        <!-- Open API -->
+        <div class="b-information__card">
+          <%= image_tag('icon-api.svg', alt: 'Open API icon', class: 'b-information__img') %>
+          <h3 class="b-information__subtitle">
+            Open API
+          </h3>
+          <p class="b-information__byline">
+            Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="b-article">
+    <div class="b-article__container">
+      <h2 class="b-article__title">
+        Latest articles
+      </h2>
+
+      <div class="b-article__card-container">
+        <div class="b-article__card">
+          <div class="b-article__card-img-container">
+            <%= image_tag('image-currency.jpg', alt: 'Article image', class: 'b-article__card-img') %>
+          </div>
+          <div class="b-article__info">
+            <span class="b-article__author">By Claire Robinson</span>
+            <h3 class="b-article__headline">Receive money in any currency with no fees</h3>
+            <p class="b-article__byline">
+              The world is getting smaller and we’re becoming more mobile. So why should you be forced to only receive money in a single
+            </p>
+          </div>
+        </div>
+
+        <div class="b-article__card">
+          <div class="b-article__card-img-container">
+            <%= image_tag('image-restaurant.jpg', alt: 'Article image', class: 'b-article__card-img') %>
+          </div>
+          <div class="b-article__info">
+            <span class="b-article__author">By Wilson Hutton</span>
+            <h3 class="b-article__headline">Treat yourself without worrying about money</h3>
+            <p class="b-article__byline">
+              Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. That means you
+            </p>
+          </div>
+        </div>
+
+        <div class="b-article__card">
+          <div class="b-article__card-img-container">
+            <%= image_tag('image-plane.jpg', alt: 'Article image', class: 'b-article__card-img') %>
+          </div>
+          <div class="b-article__info">
+            <span class="b-article__author">By Wilson Hutton</span>
+            <h3 class="b-article__headline">Take your Easybank card wherever you go</h3>
+            <p class="b-article__byline">
+              We want you to enjoy your travels. This is why we don’t charge any fees on purchases while you’re abroad. We’ll even show you
+            </p>
+          </div>
+        </div>
+
+        <div class="b-article__card">
+          <div class="b-article__card-img-container">
+            <%= image_tag('image-confetti.jpg', alt: 'Article image', class: 'b-article__card-img') %>
+          </div>
+          <div class="b-article__info">
+            <span class="b-article__author">By Claire Robinson</span>
+            <h3 class="b-article__headline">Our invite-only Beta accounts are now live!</h3>
+            <p class="b-article__byline">
+              After a lot of hard work by the whole team, we’re excited to launch our closed beta. It’s easy to request an invite through the site
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="b-footer">
+  <div class="b-footer__container">
+    <div class="b-footer__col b-footer__col--left">
+      <div class="b-footer__icon-container">
+        <%= image_tag('logo-white.svg', alt: 'Easybank logo', class: 'b-footer__img b-footer__img--logo') %>
+        <div class="b-footer__social-icons">
+          <%= image_tag('icon-facebook.svg', alt: 'Facebook icon', class: 'b-footer__img b-footer__img--social') %>
+          <%= image_tag('icon-youtube.svg', alt: 'Youtube icon', class: 'b-footer__img b-footer__img--social') %>
+          <%= image_tag('icon-twitter.svg', alt: 'Twitter icon', class: 'b-footer__img b-footer__img--social') %>
+          <%= image_tag('icon-pinterest.svg', alt: 'Pinterest icon', class: 'b-footer__img b-footer__img--social') %>
+          <%= image_tag('icon-instagram.svg', alt: 'Instagram icon', class: 'b-footer__img b-footer__img--social') %>
+        </div>
+      </div>
+
+      <div class="b-footer__links">
+        <a href="#" class="b-footer__link">About Us</a>
+        <a href="#" class="b-footer__link">Contact</a>
+        <a href="#" class="b-footer__link">Blog</a>
+      </div>
+
+      <div class="b-footer__links">
+        <a href="#" class="b-footer__link">Careers</a>
+        <a href="#" class="b-footer__link">Support</a>
+        <a href="#" class="b-footer__link">Privacy Policy</a>
+      </div>
+    </div>
+
+    <div class="b-footer__col b-footer__col--right">
+      <a href="#" class="b-cta-button">
+        <span>
+          Request Invite
+        </span>
+      </a>
+
+      <p class="b-footer__disclaimer">
+        &copy; Easybank. All Rights Reserved
+      </p>
+    </div>
+  </div>
+</footer>

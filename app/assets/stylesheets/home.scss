@@ -1,0 +1,507 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+// Reset
+body {
+  position: relative;
+  margin: 0;
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, p {
+  margin: 0 0 10px;
+}
+
+.b-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  height: 100px;
+  background-color: #ffffff;
+  width: 100%;
+
+
+  @media (min-width: 768px) {
+    height: 100px;
+  }
+
+  &__container {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+
+  &__items {
+    position: relative;
+    min-height: 60px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    @media (min-width: 768px) {
+      padding: 20px 0;
+    }
+  }
+
+  &__menu {
+    display: none;
+    position: absolute;
+    bottom: -220px;
+    left: 0;
+    width: 100%;
+
+    @media (min-width: 768px) {
+      display: block;
+      position: relative;
+      bottom: unset;
+      left: unset;
+      width: unset;
+    }
+  }
+
+  &__links {
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #ffffff;
+
+    @media (min-width: 768px) {
+      display: flex;
+      margin: 0;
+    }
+  }
+
+  &__link {
+    color: #000000;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: 768px) {
+      margin: 0 10px;
+      color: hsl(233, 8%, 62%);
+    }
+  }
+
+  &__img {
+    display: block;
+
+    &--logo {
+      height: 25px;
+    }
+
+    &--hamburger {
+      height: 15px;
+
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+
+    &--close {
+      display: none;
+      height: 20px;
+    }
+
+    &--intro-mobile {
+      width: 100%;
+
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+
+    &--intro-desktop {
+      position: absolute;
+      top: -260px;
+      left: -60px;
+      height: 950px;
+    }
+
+    &--mobiles {
+      position: absolute;
+      top: -100px;
+      width: 100%;
+      z-index: 1;
+
+      @media (min-width: 768px) {
+        top: -140px;
+        right: 0;
+        width: 85%;
+      }
+    }
+  }
+}
+
+.b-cta-button {
+  color: white;
+  padding: 15px 40px;
+  background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+  text-decoration: none;
+  border-radius: 30px;
+
+  &--nav {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: block;
+    }
+  }
+}
+
+.b-hero {
+  background-color: hsl(0, 0%, 98%);
+  margin-top: 100px;
+
+  @media (min-width: 768px) {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 500px;
+  }
+
+  &__image-container {
+    position: relative;
+    overflow: hidden;
+
+    @media (min-width: 768px) {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 50%;
+      overflow: unset;
+
+      &__img {
+        width: 100%;
+      }
+    }
+
+    &--desktop {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: none;
+
+      @media (min-width: 768px) {
+        display: block;
+        height: 500px;
+        width: 50%;
+        overflow: hidden;
+      }
+    }
+  }
+
+  &__cta {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 60px;
+
+    @media (min-width: 768px) {
+      width: 40%;
+      text-align: left;
+    }
+
+    &-container {
+      position: relative;
+
+      @media (min-width: 768px) {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: left;
+      }
+    }
+
+    &-title {
+      font-size: 40px;
+      font-weight: 400;
+      margin-bottom: 30px;
+    }
+
+    &-byline {
+      color: hsl(233, 8%, 62%);
+      padding-bottom: 30px;
+    }
+  }
+}
+
+.b-information {
+  background-color: hsl(220, 16%, 96%);
+  padding: 60px 20px 20px;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    text-align: left;
+  }
+
+  &__container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+
+  &__card {
+    @media (min-width: 768px) {
+      margin-right: 30px;
+      width: 33.33%;
+    }
+
+    &-container {
+      @media (min-width: 768px) {
+        display: flex;
+      }
+    }
+  }
+
+  &__headline {
+    @media (min-width: 768px) {
+      width: 60%;
+    }
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+
+  &__subtitle {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  &__byline {
+    color: hsl(233, 8%, 62%);
+    padding-bottom: 30px;
+  }
+
+  &__img {
+    margin-bottom: 20px;
+  }
+}
+
+.b-article {
+  background-color: hsl(0, 0%, 98%);
+  padding: 60px 20px;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    text-align: left;
+  }
+
+  &__container {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+
+  &__card {
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    @media (min-width: 768px) {
+      margin-right: 20px;
+    }
+
+    &-container {
+      @media (min-width: 768px) {
+        display: flex;
+      }
+    }
+
+    &-img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+      &-container {
+        height: 200px;
+      }
+    }
+  }
+
+  &__info {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: left;
+    height: 100%;
+  }
+
+  &__author,
+  &__headline,
+  &__byline {
+    display: inline-block;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  &__author {
+    color: hsl(233, 8%, 62%);
+    font-size: 12px;
+  }
+
+  &__headline {
+    font-size: 24px;
+  }
+
+  &__byline {
+    color: hsl(233, 8%, 62%);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+.b-footer {
+  background-color: hsl(233, 26%, 24%);
+
+  &__container {
+    position: relative;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__img {
+    display: block;
+    margin: 0 auto 30px;
+
+    @media (min-width: 768px) {
+      margin: 0 0 30px;
+    }
+
+    &--social {
+      margin-right: 20px;
+
+      @media (min-width: 768px) {
+        margin-bottom: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__social-icons {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__links {
+    &:last-child {
+      margin-bottom: 30px;
+
+      @media (min-width: 768px) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    color: #ffffff;
+    margin-bottom: 15px;
+    text-decoration: none;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      text-align: left;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &-col {
+      margin-right: 30px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .b-cta-button {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+
+  &__disclaimer {
+    color: hsl(233, 8%, 62%);
+
+    @media (min-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__col {
+    &--right {
+      text-align: center;
+
+      @media (min-width: 768px) {
+        display: block;
+        text-align: right;
+      }
+    }
+
+    &--left {
+      @media (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 50%;
+      }
+    }
+  }
+}
+
+.b-main {
+  position: relative;
+  margin: 0 auto;
+}
+
+.b-mask {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(10,10,10,0.45);
+  z-index: 3;
+}
+
+.is-hidden {
+  display: none;
+}
+
